@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbarIcon {
+    @apply text-gray-500 text-2xl;
+
+  }
+
+  .navItem {
+    @apply  flex justify-center items-center space-x-4  my-5 hover:bg-rose-100  cursor-pointer
+    
+  }
+
+  .navText {
+    @apply text-xl font-semibold font-poppins text-[#666] hover:text-rose-700
+  }
+}
