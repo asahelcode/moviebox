@@ -22,7 +22,7 @@ const SearchResult = () => {
           .then((res) =>
             dispatch({ type: "SET_SEARCH_MOVIES", payload: res.data.results })
           ))();
-    }, 3000);
+    }, 8000);
   }, [searchTerm, dispatch]);
 
   const getGenreNames = (genreIds: number[]) => {

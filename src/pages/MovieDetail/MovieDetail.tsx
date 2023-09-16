@@ -102,7 +102,7 @@ const MovieDetail = () => {
         {/**Trailer */}
         <img
           src={`${url}${movie?.poster_path}`}
-          className=" object-fit w-full h-1/3 rounded-3xl absolute"
+          className=" object-cover object-center w-full h-1/3 rounded-3xl absolute"
         />
 
         <div className="w-full px-5 flex mt-5 flex-col absolute bottom-5">
