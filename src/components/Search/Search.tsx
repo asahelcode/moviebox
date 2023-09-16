@@ -2,8 +2,10 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { useAppContext } from "../../context";
 import { ChangeEvent } from "react";
 
+//Hello world
+
 const Search = () => {
-  const { state, dispatch } = useAppContext();
+  const { dispatch } = useAppContext();
   return (
     <div className="relative items-center justify-center hidden w-3/6 lg:flex">
       <input

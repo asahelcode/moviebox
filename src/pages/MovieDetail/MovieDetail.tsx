@@ -112,7 +112,7 @@ const MovieDetail = () => {
               <span data-testid="movie-title">{movie?.original_title}</span>
               <BsDot />
               <span data-testid="movie-release-date">
-                {new Date(movie?.release_date)?.toUTCString()}
+                {movie?.release_date?.substring(0, 15)}
               </span>
               <BsDot />
               {movie?.adult ? (

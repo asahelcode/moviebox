@@ -8,7 +8,7 @@ function App() {
       element: <HomePage />,
     },
     {
-      path: "/movie/:id",
+      path: "/movies/:id",
       element: <MovieDetail />,
     },
     
