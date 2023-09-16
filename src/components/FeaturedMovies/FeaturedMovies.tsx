@@ -64,7 +64,7 @@ const FeaturedMovies = () => {
 
       {/* Top Movies */}
       <div className="grid lg:grid-cols-4 gap-x-12 gap-y-24 grid-cols-1">
-        {movies.map((movie) => (
+        {movies?.slice(0, 10)?.map((movie) => (
           <button onClick={() => navigate(`/movies/${movie.id}`)}>
             <MovieCard
               genre={getGenreNames(movie.genre_ids)}

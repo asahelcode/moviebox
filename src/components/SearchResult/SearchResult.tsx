@@ -74,7 +74,7 @@ const SearchResult = () => {
         </div>
       ) : (
         <div className="grid lg:grid-cols-4 gap-x-12 gap-y-24 grid-cols-1">
-          {searchMovies.slice(0, 12).map((movie) => (
+          {searchMovies.slice(0, 10).map((movie) => (
             <button onClick={() => navigate(`/movies/${movie.id}`)}>
               <MovieCard
                 genre={getGenreNames(movie.genre_ids)}
