@@ -8,7 +8,11 @@ const Hero = () => {
   return (
     <div className="relative flex h-max ">
       <div className="items-center justify-center flex-1">
-        <img src={HeroImage} alt="hero image" className="flex object-cover" />
+        <img
+          src={HeroImage}
+          alt="hero image"
+          className="flex object-cover opacity-90"
+        />
       </div>
 
       <div className="absolute space-y-5 text-white bottom-32 left-28">
