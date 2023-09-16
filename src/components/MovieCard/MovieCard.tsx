@@ -38,7 +38,7 @@ const MovieCard = ({
       <div className="flex flex-col mt-4 space-y-2 justify-start items-start">
         <div className="text-xs font-bold text-gray-400 font-dmsans">
           <span>USA, </span>
-          <span data-testid="movie-release-date">{release_date.substring(0, 4)}</span>
+          <span data-testid="movie-release-date">{new Date(release_date)?.toUTCString()}</span>
         </div>
         <div className="text-lg font-bold text-gray-900 font-dmsans flex justify-start w-full">
           <span data-testid="movie-title">{original_title}</span>
